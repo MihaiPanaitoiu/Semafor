@@ -7,12 +7,16 @@ public class Semafor {
     public static void main(String[] args) {
         int a = genereazaNumar(1, 3);
         
-        if (a == 1) {
-            System.out.println("Culoarea semaforului este VERDE");
-        } else if (a == 2) {
-            System.out.println("Culoarea semaforului este GALBENA");
-        } else {
-            System.out.println("Culoarea semaforului este ROSIE");
+        switch (a) {
+            case 1:
+                System.out.println("Culoarea semaforului este VERDE");
+                break;
+            case 2:
+                System.out.println("Culoarea semaforului este GALBENA");
+                break;
+            case 3:
+                System.out.println("Culoarea semaforului este ROSIE");
+                break;
         }
     } 
     public static int genereazaNumar(int min, int max){
